@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId> spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </parent>
+    <properties>
+        <projects.version>1.1.1-SNAPSHOT</projects.version>
+    </properties>
+
+    <modules>
+        <module>friends-share-resources-bean</module>
+        <module>friends-share-resources-common</module>
+        <module>friends-share-resources-core</module>
+        <module>friends-share-resources-sdk</module>
+        <module>friends-share-resources-rest</module>
+    </modules>
+
+    <groupId>com.friends.share</groupId>
+    <artifactId>friends-share-resource</artifactId>
+    <version>1.1.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>friends-share-resources</name>
+    <description>流水线服务</description>
+
+    <!-- 管理依赖   -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.friends.share</groupId>
+                <artifactId>friends-share-resource-bean</artifactId>
+                <version>${projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.friends.share</groupId>
+                <artifactId>friends-share-resource-common</artifactId>
+                <version>${projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.friends.share</groupId>
+                <artifactId>friends-share-resource-core</artifactId>
+                <version>${projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.friends.share</groupId>
+                <artifactId>friends-share-resource-sdk</artifactId>
+                <version>${projects.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
